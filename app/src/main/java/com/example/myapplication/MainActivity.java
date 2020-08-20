@@ -125,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
             else {
                 mediaPlayer.prepare();
                 mediaPlayer.start();
+                Toast.makeText(getApplicationContext(),"Play music",Toast.LENGTH_LONG).show();
                 pause.setImageResource(R.drawable.ic_pause_circle_filled_black_24dp);
                 audio_name.setText(audioArrayList.get(pos).getAudioTitle());
                 audio_index = pos;
